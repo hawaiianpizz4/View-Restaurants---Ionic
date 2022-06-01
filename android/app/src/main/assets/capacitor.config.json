@@ -1,0 +1,6 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": "proyectmoviles",
+	"webDir": "www",
+	"bundledWebRuntime": false
+}

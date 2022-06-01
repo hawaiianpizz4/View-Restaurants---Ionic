@@ -1,0 +1,44 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>fast_food</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <!-- <ion-item>
+    <div *ngFor="let restaurant of restaurants">
+      <ion-avatar slot="start">
+        <ion-img [src]=""></ion-img>
+      </ion-avatar>
+      <ion-label>
+        {{restaurant.nameRestaurant}}
+      </ion-label>
+      
+    </div>
+  </ion-item> -->
+  <ion-card class="tarjeta_color">
+    <ion-button routerLink="/registrotipocomida" id="botonAgregar" color="dark">Agregar Fast Food</ion-button>
+    <div *ngFor="let restaurant of fastfood">
+      <ion-card-header>
+        <div class="centrar_titulo_inicio">
+        <ion-card-subtitle>{{restaurant.numberRestaurant}}</ion-card-subtitle></div>
+      </ion-card-header>
+      <ion-card-content>
+        <div class="mitad_foto">
+          <img src={{restaurant.link}}/>
+        </div>
+        <br/>
+        <div class="centrar_titulo">
+          <ion-card-title>{{restaurant.nameRestaurant}}</ion-card-title>
+        </div>
+        <div class="centrar_titulo_d">
+        {{restaurant.descripcionRestaurante}}
+        <br/>
+        <ion-button expand="block" color="dark">Volver al restaurante</ion-button>
+        <br/>
+        </div>
+      <br/>
+      </ion-card-content>
+    </div>
+  </ion-card>
+</ion-content>

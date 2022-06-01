@@ -1,20 +1,103 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
+<!-- <ion-header [translucent]="true">
+  
+</ion-header> -->
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content>
+  
+  <!-- <ion-card>
+    <ion-item href="#" class="ion-activated">
+      <ion-icon name="wifi" slot="start"></ion-icon>
+      <ion-label>Card Link Item 1 activated</ion-label>
+    </ion-item>
+  
+    <ion-item href="#">
+      <ion-icon name="wine" slot="start"></ion-icon>
+      <ion-label>Card Link Item 2</ion-label>
+    </ion-item>
+  
+  </ion-card> -->
+  
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+
+  <ion-item>
+    <ion-label>
+      Co-Menu
+      <br>
+      Descubre los mejores restaurantes
+      <br> 
+      A precios increíbles
+    </ion-label>
+    <ion-icon name="restaurant-outline" slot="end"></ion-icon>
+  </ion-item>
+  <div id="botones">
+    <br>
+    <ion-button routerLink="/carnes" class="boton" size="small" color="warning">
+    Carnes
+    </ion-button>
+    <ion-button routerLink="/combos" class="boton" size="small" color="warning">
+    Combos
+    </ion-button>
+    <ion-button routerLink="/fast-food" class="boton" size="small" color="warning">
+    Fast Food
+    </ion-button>
+    <ion-button routerLink="/bebidas" class="boton" size="small" color="warning">
+    Bebidas
+    </ion-button>
   </div>
+  <ion-card id="loMasPopular">
+    <ion-item>
+      <ion-icon name="fast-food" slot="start"></ion-icon>
+      <ion-label>Lo más popular</ion-label>
+    </ion-item>
+  
+    <ion-card-content>
+      <ion-text>
+        <h1>Carnes</h1>
+      </ion-text>
+      This is content, without any paragraph or header tags,
+      within an ion-card-content element.
+    </ion-card-content>
+  </ion-card>
+  
+
+  
+  
+  <ion-slides [options]="option" class="ion-margin-top">
+    
+    
+    <ion-slide>
+      <ion-card>
+        <img src="assets/img/imagen1.jpg">
+      </ion-card>
+    </ion-slide>
+    
+    <ion-slide>
+      <ion-card>
+        <img src="assets/img/imagen2.jpg">
+      </ion-card>
+    </ion-slide>
+
+    <ion-slide>
+      <ion-card>
+        <img src="assets/img/imagen3.jpg">
+      </ion-card>
+    </ion-slide>
+    
+    <ion-slide>
+      <ion-card>
+        <img src="assets/img/imagen4.jpg">
+      </ion-card>
+    </ion-slide>
+    
+    <ion-slide>
+      <ion-card>
+        <img src="assets/img/imagen5.jpg">
+      </ion-card>
+    </ion-slide>
+    
+    
+  </ion-slides>
+  
+  <ion-button routerLink="/restaurants" id="botonAgregar" color="dark">Visualizar Restaurantes</ion-button>
+  
 </ion-content>

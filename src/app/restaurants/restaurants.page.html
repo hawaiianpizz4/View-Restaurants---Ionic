@@ -1,0 +1,55 @@
+<!-- <ion-header>
+  <ion-toolbar>
+    <ion-title>restaurants</ion-title>
+  </ion-toolbar>
+</ion-header> -->
+
+<ion-content>
+  
+  <!-- <ion-item>
+    <div *ngFor="let restaurant of restaurants">
+      <ion-avatar slot="start">
+        <ion-img [src]=""></ion-img>
+      </ion-avatar>
+      <ion-label>
+        {{restaurant.nameRestaurant}}
+      </ion-label>
+      
+    </div>
+  </ion-item> -->
+
+  <ion-card>
+    <ion-button routerLink="/registrorest" id="botonAgregar" color="dark">Agregar Restaurantes</ion-button>
+    <div *ngFor="let restaurant of restaurants">
+      <ion-card-header>
+        <ion-card-subtitle>{{restaurant.numberRestaurant}}</ion-card-subtitle>
+        <ion-card-title>{{restaurant.nameRestaurant}}</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <img src="{{restaurant.link}}" />
+        <div id="horario">
+          {{restaurant.openClose}}
+        </div>
+        <ion-button id="boton-menu" color="dark">Menu del Restaurante</ion-button>
+        <ion-icon name="{{restaurant.estrella1}}"></ion-icon>
+        <ion-icon name="{{restaurant.estrella2}}"></ion-icon>
+        <ion-icon name="{{restaurant.estrella3}}"></ion-icon>
+        <ion-icon name="{{restaurant.estrella4}}"></ion-icon>
+        <ion-icon name="{{restaurant.estrella5}}"></ion-icon>
+        <b> {{restaurant.textoestrella}}</b>
+        <br>
+        <br>
+        <label>Descripción del  Restaurante</label>
+        <br>
+        <br>
+        {{restaurant.descripcionRestaurante}}
+        <ion-button routerLink="/mapas" id="boton-menu2" color="dark">Ubicación</ion-button>
+        <ion-button routerLink="/" id="boton-menu3" color="dark">Página Web</ion-button>
+      </ion-card-content>
+    </div>
+  </ion-card>
+
+</ion-content>
+
+
+

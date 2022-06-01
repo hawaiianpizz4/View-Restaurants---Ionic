@@ -1,0 +1,38 @@
+
+ion-content {
+    background-color: #F2CC5B;
+    #map {
+      width: 80%;
+      height: 80%;
+      margin: 50px 80px;
+      opacity: 0;
+      transition: opacity 150ms ease-in;
+      display: block;
+      &.show-map{
+        opacity: 1;
+      }
+    }
+  }
+
+  .centrar_titulo_inicio{
+    text-align: center;
+  }
+ion-row {
+    background-color:  #F2CC5B;
+    font-weight: bold;
+    width: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+    text-align: center;
+    #grafico3{
+        width: 20%;
+        height: 100%;
+    }
+  }
+  ion-col {
+    //border: 1px solid black;
+    border-bottom: 0;
+    border-right: 0;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
